@@ -28,6 +28,7 @@ namespace ConsoleApplication{
         public charNum(char character, int number = 1){
            this.character = character;
            this.number = number;
+           
         }
     }
 }

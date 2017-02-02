@@ -8,8 +8,9 @@ namespace ConsoleApplication{
             string path = Directory.GetCurrentDirectory()+"\\markov_input.txt";
             var inputText = File.ReadAllLines(path);
             string text = string.Join(" ", inputText);
+            //TODO: Add html parsing maybe? Reading idnes news??
             //Console.WriteLine(text);
-            markovText mText = new markovText(3, text);
+            markovText mText = new markovText(5, text);
             Console.WriteLine(mText.generateText(420));
         }
     }

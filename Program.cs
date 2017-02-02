@@ -10,7 +10,7 @@ namespace ConsoleApplication{
             string text = string.Join(" ", inputText);
             //Console.WriteLine(text);
             markovText mText = new markovText(3, text);
-            Console.WriteLine(mText.generateText(400));
+            Console.WriteLine(mText.generateText(420));
         }
     }
 

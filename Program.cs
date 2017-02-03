@@ -8,7 +8,6 @@ namespace ConsoleApplication{
             string path = Directory.GetCurrentDirectory()+"\\markov_input.txt";
             var inputText = File.ReadAllLines(path);
             string text = string.Join(" ", inputText);
-            //TODO: Add html parsing maybe? Reading idnes news??
             //Console.WriteLine(text);
             markovText mText = new markovText(5, text);
             Console.WriteLine(mText.generateText(420));
@@ -19,6 +18,7 @@ namespace ConsoleApplication{
         public int size;
         public string inputText;
         public List<ngram> ngrams = new List<ngram>();
+
         public markovText(int size, string inputText){
             this.size = size;
             this.inputText = inputText;
@@ -36,6 +36,8 @@ namespace ConsoleApplication{
 
         public void createNgrams(int size, string inputText){
             inputText = inputText.ToLower();
+            inputText = inputText.Replace("„", "");
+            inputText = inputText.Replace("“", "");
             for (int i = 0; i < inputText.Length-size-1; i++){
                 string gram = inputText.Substring(i, size);
                 string nextString = inputText.Substring(i+size,1);
@@ -77,6 +79,7 @@ namespace ConsoleApplication{
     public class ngram{
         public string gram;
         public List<stringNum> nextStrings;
+
         public ngram(string gram){
            this.gram = gram;
            this.nextStrings = new List<stringNum>();
@@ -110,6 +113,7 @@ namespace ConsoleApplication{
     public class stringNum{
         public string str;
         public int number;
+
         public stringNum(string str, int number = 1){
            this.str = str;
            this.number = number;

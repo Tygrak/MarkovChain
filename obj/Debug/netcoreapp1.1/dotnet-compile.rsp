@@ -87,4 +87,5 @@
 --reference:C:\Users\Jurin1388\.nuget\packages\System.Threading.Timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\Jurin1388\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Jurin1388\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
+--reference:c:\Users\Jurin1388\Desktop\Program\dotnet\SharpParser\bin\Debug\netcoreapp1.1\SharpParser.dll
 c:\Users\Jurin1388\Desktop\Program\dotnet\markuv retaz\Program.cs

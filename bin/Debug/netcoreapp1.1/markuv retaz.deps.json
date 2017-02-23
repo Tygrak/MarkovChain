@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "markuv retaz/1.0.0": {
+        "dependencies": {
+          "SharpParser": "1.0.0"
+        },
         "runtime": {
           "markuv retaz.dll": {}
+        }
+      },
+      "SharpParser/1.0.0": {
+        "runtime": {
+          "SharpParser.dll": {}
         }
       }
     }
   },
   "libraries": {
     "markuv retaz/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharpParser/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
